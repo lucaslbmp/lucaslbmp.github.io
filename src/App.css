@@ -1,3 +1,8 @@
+:root {
+  --btn-highlight-color: color-mix(in srgb, var(--bg-color) 50%, transparent);
+  --btn-highlight-overlay: linear-gradient(var(--btn-highlight-color), var(--btn-highlight-color))
+}
+
 .app {
   text-align: center;
   display: flex;
@@ -7,4 +12,116 @@
 
 .app-content {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* .intro {
+  background-image: url("../public/web-developer-1.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  margin: 3rem 0;
+} */
+
+.intro {
+  background-image: var(--btn-highlight-overlay), url("../public/bg-dark-hexagons.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-grow: 0;
+  border-bottom: 2px solid var(--border-primary-color);
+
+}
+
+.intro-text {
+  font-size: large;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+
+  p,
+  h1 {
+    margin: 0;
+  }
+
+  .name {
+    font-weight: 800;
+    font-size: 4rem;
+    /* color: var(--primary-color); */
+    color: var(--fg-primary-color);
+  }
+
+  .role {
+    font-weight: 600;
+    /* color: var(--fg-secondary-color); */
+    color: var(--primary-color);
+  }
+
+  .buttons-area {
+    padding: 2rem 0;
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+/* Section About  */
+
+.presentation {
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  /* border-bottom: 2px solid var(--border-primary-color); */
+
+  .presentation-txt {
+    .text {
+      flex: 1;
+
+    }
+
+    button {
+      margin-top: 2rem;
+    }
+  }
+
+  .profile-image {
+    /* flex: 0 1 400px; */
+    flex: 1;
+    align-self: center;
+
+    & img {
+      /* max-width: 100%; */
+      max-width: 250px;
+      border-radius: 50%;
+      padding: 1.5rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.technologies {
+  text-align: left;
+  margin-top: 1.5rem;
+
+  .icons-list {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    /* align-items: center; */
+
+    .icon-img {
+      /* flex: 1 1 2rem; */
+      max-width: 60px;
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.experience {
+  background-image: var(--bg-secondary);
 }
