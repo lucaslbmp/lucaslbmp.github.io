@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-color);
   color: var(--fg-primary-color);
-  background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  background: var(--bg-primary);
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -23,8 +23,22 @@ code {
   --fg-primary-color: #ddd;
   --fg-secondary-color: #777;
   --border-primary-color: #333;
+  --bg-primary: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  --bg-secondary: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30) 0%, rgb(0, 0, 0) 99.4%);
 
-  .box-content {
+  .h-padding {
     padding-inline: 6rem;
+  }
+
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--border-primary-color);
+  }
+
+  .title {
+    font-size: xx-large;
+    color: var(--primary-color);
+    margin-top: 0;
   }
 }
