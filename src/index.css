@@ -21,5 +21,10 @@ code {
   --primary-color: #94739f;
   --bg-color: #252525;
   --fg-primary-color: #ddd;
+  --fg-secondary-color: #777;
   --border-primary-color: #333;
+
+  .box-content {
+    padding-inline: 6rem;
+  }
 }
