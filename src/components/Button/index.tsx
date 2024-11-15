@@ -11,9 +11,9 @@ const Button = (props: ButtonProps) => {
     <button
       {...props}
       className={
-        (props?.className ?? "") +
         " app-button " +
-        (props.btnStyle ?? "primary")
+        (props.btnStyle ?? "primary") +
+        (props?.className ?? "")
       }
     >
       {props.children}
