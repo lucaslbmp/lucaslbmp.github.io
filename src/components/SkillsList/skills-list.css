@@ -1,0 +1,13 @@
+.skill-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    .skill-item {
+        color: var(--primary-color);
+        padding-inline: .5rem;
+        background-color: var(--btn-highlight-color);
+        border-radius: 5px;
+    }
+}

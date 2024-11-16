@@ -1,5 +1,6 @@
 import { ExperienceDetails } from "../../types";
 import { getMonthYearDate } from "../../utils";
+import SkillsList from "../SkillsList";
 import "./experience-item.css";
 
 const ExperienceItem = ({
@@ -21,11 +22,7 @@ const ExperienceItem = ({
           {role} - {company}
         </div>
         <div>{description}</div>
-        <div className="skill-list">
-          {skills.map((skill) => (
-            <div className="skill-item">{skill}</div>
-          ))}
-        </div>
+        <SkillsList skills={skills} />
       </div>
     </article>
   );
