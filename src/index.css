@@ -26,6 +26,9 @@ code {
   --bg-primary: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
   --bg-secondary: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30) 0%, rgb(0, 0, 0) 99.4%);
 
+  --btn-highlight-color: color-mix(in srgb, var(--bg-color) 50%, transparent);
+  --btn-highlight-overlay: linear-gradient(var(--btn-highlight-color), var(--btn-highlight-color));
+
   .h-padding {
     padding-inline: 6rem;
   }
