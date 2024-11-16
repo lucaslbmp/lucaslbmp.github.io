@@ -13,6 +13,7 @@ const Button = (props: ButtonProps) => {
       className={
         " app-button " +
         (props.btnStyle ?? "primary") +
+        " " +
         (props?.className ?? "")
       }
     >
