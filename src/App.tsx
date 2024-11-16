@@ -5,8 +5,10 @@ import Footer from "./components/Footer";
 import Button from "./components/Button";
 import { FaDownload } from "react-icons/fa";
 import techsIcons from "./assets/icons/icons";
-import { experiences } from "./data";
+import { experiences, projects } from "./data";
 import ExperienceItem from "./components/ExperienceItem";
+import Card from "./components/Card";
+import ProjectCard from "./components/ProjectCard";
 
 function App() {
   return (
@@ -82,7 +84,14 @@ function App() {
           </div>
         </section>
 
-        <section className="projects"></section>
+        <section className="projects section h-padding">
+          <h2 className="title">Projetos</h2>
+          <div className="projects-list">
+            {projects.map((project) => (
+              <ProjectCard projectDetails={project} />
+            ))}
+          </div>
+        </section>
 
         <section className="contacts"></section>
       </div>

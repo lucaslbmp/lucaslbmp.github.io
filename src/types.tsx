@@ -8,3 +8,14 @@ export type ExperienceDetails = {
   startDate: Date;
   endDate: Date;
 };
+
+export type ProjectDetails = {
+  name: string;
+  description: string;
+  thumbnail: string;
+  links: {
+    demo?: string;
+    repo: string;
+  };
+  skills?: string[];
+};

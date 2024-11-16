@@ -128,3 +128,14 @@
     margin-inline: auto;
   }
 }
+
+.projects {
+  hyphens: auto;
+
+  .projects-list {
+    text-align: left;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  }
+}
