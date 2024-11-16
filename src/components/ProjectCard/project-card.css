@@ -1,0 +1,56 @@
+.project-card {
+    border-radius: 10px;
+    position: relative;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    transform: scale(1);
+
+    .thumbnail {
+
+        img {
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        margin-top: 0;
+        flex: 1 1 0;
+    }
+
+    .buttons-area {
+        position: absolute;
+        right: 50%;
+        top: 25%;
+        transform: translate(50%, 0);
+        margin-left: auto;
+        display: flex;
+        gap: 3rem;
+        padding: 1rem;
+        visibility: hidden;
+
+        a {
+            color: inherit;
+            height: 1em;
+        }
+
+        .action-button {
+            /* border-radius: 50%; */
+            padding: 1rem;
+            opacity: 0.9;
+            font-size: 3rem;
+
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: transform ease-in-out .5s;
+
+        .buttons-area {
+            visibility: visible;
+        }
+    }
+}
