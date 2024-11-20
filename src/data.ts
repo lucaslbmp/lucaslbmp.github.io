@@ -77,4 +77,24 @@ export const projects: ProjectDetails[] = [
       "Prisma",
     ],
   },
+  {
+    name: "Seção de Comentários",
+    description:
+      "Aplicação monorepositório desenvolvida em Next.js que simula uma página de comentários de rede social.",
+    thumbnail: "/thumbs/comments-page-thumb.png",
+    links: {
+      repo: "https://github.com/lucaslbmp/comments-page",
+    },
+    skills: ["Next.js", "TypeScript", "Prisma", "PostgresSQL"],
+  },
+  {
+    name: "Coleção Unsplash",
+    description:
+      "Serviço que permite a visualização, edição e criação coleções de imagens do banco de imagens Unsplash.",
+    thumbnail: "/thumbs/unsplash-collection-thumb.png",
+    links: {
+      repo: "https://github.com/lucaslbmp/unsplash-collection",
+    },
+    skills: ["Next.js", "TailwindCSS", "TypeScript"],
+  },
 ];
