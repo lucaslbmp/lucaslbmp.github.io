@@ -20,7 +20,17 @@ function App() {
           <article className="intro-text ">
             <h1 className="name">{"Lucas Pinheiro"}</h1>
             <p className="role">{"Desenvolvedor de software"}</p>
-            <p>{"2 anos de experiência"}</p>
+            <p className="detail">{"2 anos de experiência"}</p>
+
+            <div className="links">
+              {contacts
+                .filter(({ type }) => ["linkedin", "github"].includes(type))
+                .map(({ url, Icon }) => (
+                  <Button btnStyle="ghost" link={url}>
+                    <Icon />
+                  </Button>
+                ))}
+            </div>
 
             <div className="buttons-area">
               <Button>Contacte-me</Button>

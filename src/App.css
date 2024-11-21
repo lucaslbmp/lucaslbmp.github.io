@@ -54,10 +54,26 @@
     color: var(--primary-color);
   }
 
+  .detail {
+    padding: 0 0 1rem;
+  }
+
   .buttons-area {
     padding: 2rem 0;
     display: flex;
     gap: 2rem;
+  }
+
+  .links {
+    display: flex;
+    gap: .5rem;
+    /* margin: 0 1rem; */
+
+    a {
+      border-radius: 1rem;
+      padding: .5rem;
+      font-size: 1.25em;
+    }
   }
 }
 
