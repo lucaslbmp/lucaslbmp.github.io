@@ -1,4 +1,5 @@
-import { ExperienceDetails, ProjectDetails } from "./types";
+import { ContactInfo, ExperienceDetails, ProjectDetails } from "./types";
+import { FaLinkedin, FaGithub, FaPhone, FaEnvelope } from "react-icons/fa";
 
 export const experiences: ExperienceDetails[] = [
   {
@@ -96,5 +97,30 @@ export const projects: ProjectDetails[] = [
       repo: "https://github.com/lucaslbmp/unsplash-collection",
     },
     skills: ["Next.js", "TailwindCSS", "TypeScript"],
+  },
+];
+
+export const contacts: ContactInfo[] = [
+  {
+    type: "linkedin",
+    Icon: FaLinkedin,
+    display: "/lucas-bmp",
+    url: "https://www.linkedin.com/in/lucas-bmp/",
+  },
+  {
+    type: "github",
+    Icon: FaGithub,
+    display: "/lucaslbmp",
+    url: "https://github.com/lucaslbmp",
+  },
+  {
+    type: "email",
+    Icon: FaEnvelope,
+    display: "lucasset10@msn.com",
+  },
+  {
+    type: "phone",
+    Icon: FaPhone,
+    display: "+55 (11) 95747-6961",
   },
 ];

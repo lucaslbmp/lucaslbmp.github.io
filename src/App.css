@@ -139,3 +139,42 @@
     grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   }
 }
+
+.contacts {
+  background-image: var(--bg-secondary);
+
+  .contacts-text {
+    margin-bottom: 2rem;
+  }
+
+  .contacts-list {
+    display: flex;
+    gap: 0 4rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      text-align: left;
+
+      h3 {
+        margin: 0 0 .5rem;
+      }
+
+      a {
+        color: color-mix(in srgb, var(--primary-color) 70%, black);
+
+      }
+
+      .contact-icon {
+        font-size: 3.8rem;
+        color: var(--primary-color);
+      }
+
+
+    }
+
+  }
+}

@@ -5,10 +5,11 @@ import Footer from "./components/Footer";
 import Button from "./components/Button";
 import { FaDownload } from "react-icons/fa";
 import techsIcons from "./assets/icons/icons";
-import { experiences, projects } from "./data";
+import { contacts, experiences, projects } from "./data";
 import ExperienceItem from "./components/ExperienceItem";
 import Card from "./components/Card";
 import ProjectCard from "./components/ProjectCard";
+import { capitalize } from "./utils";
 
 function App() {
   return (
@@ -94,6 +95,26 @@ function App() {
         </section>
 
         <section className="contacts"></section>
+        <section className="contacts section h-padding">
+          <h2 className="title">Contatos</h2>
+          <p className="contacts-text">
+            {
+              "Estou sempre aberto para novas oportunidades e colaborações. Sinta-se à vontade para entrar em contato."
+            }
+          </p>
+          <div className="contacts-list">
+            {contacts.map(({ Icon, display, type, url }) => (
+              <article className="contact-item">
+                <Icon className="contact-icon" />
+                <div>
+                  <h3>{capitalize(type)}</h3>
+
+                  {url ? <a href={url}>{display}</a> : <div>{display}</div>}
+                </div>
+              </article>
+            ))}
+          </div>
+        </section>
       </div>
       <Footer />
     </div>

@@ -1,3 +1,5 @@
+import { IconType } from "react-icons";
+
 export type ButtonStyle = "primary" | "ghost" | "danger";
 
 export type ExperienceDetails = {
@@ -18,4 +20,11 @@ export type ProjectDetails = {
     repo: string;
   };
   skills?: string[];
+};
+
+export type ContactInfo = {
+  type: string;
+  Icon: IconType;
+  display: string;
+  url?: string;
 };
