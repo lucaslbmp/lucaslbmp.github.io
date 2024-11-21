@@ -12,11 +12,11 @@ interface ProjectCardProps extends ComponentProps<typeof Card> {
 }
 
 const LinkButton = ({ url, Icon }: { url: string; Icon: IconType }) => (
-  <a href={url}>
-    <Button className="action-button">
-      <Icon />
-    </Button>
-  </a>
+  // <a href={url}>
+  <Button link={url} className="action-button">
+    <Icon />
+  </Button>
+  // </a>
 );
 
 const ProjectCard = (props: ProjectCardProps) => {

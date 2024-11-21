@@ -1,24 +1,43 @@
-import { ButtonHTMLAttributes } from "react";
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
 import { ButtonStyle } from "../../types";
 import "./button.css";
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonProps = (ButtonHTMLAttributes<HTMLButtonElement> &
+  AnchorHTMLAttributes<HTMLAnchorElement>) & {
   btnStyle?: ButtonStyle;
-}
+  link?: string;
+};
 
 const Button = (props: ButtonProps) => {
   return (
-    <button
-      {...props}
-      className={
-        " app-button " +
-        (props.btnStyle ?? "primary") +
-        " " +
-        (props?.className ?? "")
-      }
-    >
-      {props.children}
-    </button>
+    <>
+      {props.link ? (
+        <a
+          {...props}
+          href={props.link}
+          className={
+            " app-button " +
+            (props.btnStyle ?? "primary") +
+            " " +
+            (props?.className ?? "")
+          }
+        >
+          {props.children}
+        </a>
+      ) : (
+        <button
+          {...props}
+          className={
+            " app-button " +
+            (props.btnStyle ?? "primary") +
+            " " +
+            (props?.className ?? "")
+          }
+        >
+          {props.children}
+        </button>
+      )}
+    </>
   );
 };
 
