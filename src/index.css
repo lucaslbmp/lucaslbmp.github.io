@@ -23,8 +23,8 @@ code {
   --fg-primary-color: #ddd;
   --fg-secondary-color: #777;
   --border-primary-color: #333;
-  --bg-primary: radial-gradient(circle at 24.1% 68.8%, rgb(80, 80, 80) 0%, rgb(0, 0, 0) 99.4%);
-  --bg-secondary: radial-gradient(circle at 24.1% 68.8%, rgb(30, 30, 30) 0%, rgb(0, 0, 0) 99.4%);
+  --bg-primary: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+  --bg-secondary: radial-gradient(circle at 24.1% 68.8%, rgb(0, 0, 0) 0%, rgb(30, 30, 30) 99.4%);
 
   --btn-highlight-color: color-mix(in srgb, white 10%, transparent);
   --btn-highlight-overlay: linear-gradient(var(--btn-highlight-color), var(--btn-highlight-color));

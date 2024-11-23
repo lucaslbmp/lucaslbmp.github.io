@@ -148,6 +148,7 @@
 
 .projects {
   hyphens: auto;
+  background-image: var(--bg-primary);
 
   .projects-list {
     text-align: left;
