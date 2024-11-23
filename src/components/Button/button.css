@@ -8,6 +8,7 @@
     position: relative;
     display: flex;
     gap: .5rem;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
