@@ -33,8 +33,10 @@ function App() {
             </div>
 
             <div className="buttons-area">
-              <Button>Contacte-me</Button>
-              <Button btnStyle={"ghost"}>Meus projetos</Button>
+              <Button link="#contacts">Contacte-me</Button>
+              <Button link="#projects" btnStyle={"ghost"}>
+                Meus projetos
+              </Button>
             </div>
           </article>
           {/* <div>
@@ -42,7 +44,7 @@ function App() {
           </div> */}
         </section>
 
-        <section className="h-padding section">
+        <section className="h-padding section" id="about">
           <section className="presentation center-text">
             <div className="profile-image">
               <img src="/eu.jpg" alt="me" />
@@ -86,7 +88,7 @@ function App() {
           </section>
         </section>
 
-        <section className="experience section">
+        <section className="experience section" id="experience">
           <h2 className="title">Experiências</h2>
           <div className="experiences-list">
             {experiences.map((exp) => (
@@ -95,7 +97,7 @@ function App() {
           </div>
         </section>
 
-        <section className="projects section h-padding">
+        <section className="projects section h-padding" id="projects">
           <h2 className="title">Projetos</h2>
           <div className="projects-list">
             {projects.map((project) => (
@@ -104,8 +106,7 @@ function App() {
           </div>
         </section>
 
-        <section className="contacts"></section>
-        <section className="contacts section h-padding">
+        <section className="contacts section h-padding" id="contacts">
           <h2 className="title">Contatos</h2>
           <p className="contacts-text">
             {
