@@ -45,6 +45,9 @@ function App() {
         <section className="h-padding section">
           <h2 className="title">Sobre mim</h2>
           <section className="presentation center-text">
+            <div className="profile-image">
+              <img src="/eu.jpg" alt="me" />
+            </div>
             <article className="presentation-txt">
               <div className="text">
                 <p>
@@ -69,13 +72,10 @@ function App() {
                 </Button>
               </div>
             </article>
-            <div className="profile-image">
-              <img src="/eu.jpg" alt="me" />
-            </div>
           </section>
 
           <section className="technologies">
-            <h3>Principais Tecnologias:</h3>
+            <h3>Principais Tecnologias</h3>
             <div className="icons-list">
               {Object.values(techsIcons).map((Icon, i) => (
                 <div className="icon-img">

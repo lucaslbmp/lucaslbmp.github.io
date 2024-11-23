@@ -94,33 +94,34 @@
 
     button {
       margin-top: 2rem;
+      margin-inline: auto;
     }
   }
 
   .profile-image {
-    /* flex: 0 1 400px; */
-    flex: 1;
+    flex: 1 0 250px;
+    /* flex: 1; */
     align-self: center;
 
     & img {
-      /* max-width: 100%; */
-      max-width: 250px;
+      width: 100%;
+      /* max-width: 350px; */
       border-radius: 50%;
-      padding: 1.5rem;
       box-sizing: border-box;
     }
   }
 }
 
 .technologies {
-  text-align: left;
+  text-align: center;
   margin-top: 1.5rem;
 
   .icons-list {
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
-    /* align-items: center; */
+    grid-template-columns: repeat(auto-fit, minmax(60px, max-content));
+    align-items: center;
+    justify-content: center;
 
     .icon-img {
       /* flex: 1 1 2rem; */
