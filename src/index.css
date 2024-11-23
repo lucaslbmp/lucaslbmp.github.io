@@ -44,4 +44,10 @@ code {
     color: var(--primary-color);
     margin-top: 0;
   }
+
+  .subheading {
+    font-size: larger;
+    color: var(--primary-color);
+    margin-top: 0;
+  }
 }

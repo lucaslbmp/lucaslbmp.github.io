@@ -43,13 +43,13 @@ function App() {
         </section>
 
         <section className="h-padding section">
-          <h2 className="title">Sobre mim</h2>
           <section className="presentation center-text">
             <div className="profile-image">
               <img src="/eu.jpg" alt="me" />
             </div>
             <article className="presentation-txt">
               <div className="text">
+                <h3 className="subheading">Sobre mim</h3>
                 <p>
                   Olá! Sou formado em Engenharia de Instrumentação, Automação e
                   Robótica pela UFABC e trabalho como desenvolvedor de software
