@@ -68,7 +68,10 @@ function App() {
                   Nest.js e manipulação de bancos de dados usando ORMs como o
                   Prisma.
                 </p>
-                <Button>
+                <Button
+                  link="files/Long_CV_Lucas_front.pdf"
+                  download="CV_Lucas.pdf"
+                >
                   <FaDownload />
                   Baixar CV
                 </Button>
