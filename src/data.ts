@@ -95,6 +95,7 @@ export const projects: ProjectDetails[] = [
     thumbnail: "/thumbs/unsplash-collection-thumb.png",
     links: {
       repo: "https://github.com/lucaslbmp/unsplash-collection",
+      demo: "https://unsplash-collection-swart.vercel.app/",
     },
     skills: ["Next.js", "TailwindCSS", "TypeScript"],
   },
