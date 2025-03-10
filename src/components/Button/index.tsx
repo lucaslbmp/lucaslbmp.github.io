@@ -15,6 +15,8 @@ const Button = (props: ButtonProps) => {
         <a
           {...props}
           href={props.link}
+          target="_blank"
+          rel="noopener noreferrer"
           className={
             " app-button " +
             (props.btnStyle ?? "primary") +
