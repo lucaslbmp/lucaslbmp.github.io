@@ -50,6 +50,27 @@ export const projects: ProjectDetails[] = [
     ],
   },
   {
+    name: "Amigurumis da Rosi",
+    description:
+      "Projeto que implenta um website para a venda de trabalhos de crochê personalizados, construído com Next.js. O site permite que visitantes visualizem os produtos disponíveis e entrem em contato com o vendedor e possui um painel administrativo que permite a gestão dos produtos e categorias.",
+    thumbnail: "/thumbs/amigurumis-da-rosi.png",
+    links: {
+      repo: "https://https://github.com/lucaslbmp/portfolio-rosi",
+      demo: "https://master.d3eq742odxrud8.amplifyapp.com/",
+    },
+    skills: [
+      "Next.js",
+      "TypeScript",
+      "TailwindCSS",
+      "Prisma",
+      "PostgresSQL",
+      "NextAuth",
+      "Amazon S3",
+      "CloudFront",
+      "SEO",
+    ],
+  },
+  {
     name: "Gamer Store",
     description:
       "Aplicação monorepositório que simula um site de e-Commerce, construída usando TurboRepo, Next.js, TailwindCSS, Prisma e PostgresSQL.",
@@ -85,6 +106,7 @@ export const projects: ProjectDetails[] = [
     thumbnail: "/thumbs/comments-page-thumb.png",
     links: {
       repo: "https://github.com/lucaslbmp/comments-page",
+      demo: "https://comments-page-kappa.vercel.app/",
     },
     skills: ["Next.js", "TypeScript", "Prisma", "PostgresSQL"],
   },
