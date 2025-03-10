@@ -16,7 +16,7 @@ function App() {
     <div className="app">
       <Header />
       <div className="app-content">
-        <section className="intro h-padding section">
+        <section className="intro h-padding section" id="home">
           <article className="intro-text ">
             <h1 className="name">{"Lucas Pinheiro"}</h1>
             <p className="role">{"Desenvolvedor de software"}</p>
