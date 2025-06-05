@@ -54,19 +54,19 @@ function App() {
                 <h3 className="subheading">Sobre mim</h3>
                 <p>
                   Olá! Sou formado em Engenharia de Instrumentação, Automação e
-                  Robótica pela UFABC e trabalho como desenvolvedor de software
-                  há mais de 2 anos, atuando especialmente no front-end. Tenho
+                  Robótica pela UFABC e trabalhei como desenvolvedor de software
+                  por mais de 2 anos, atuando especialmente no front-end. Tenho
                   experiência no desenvolvimento de aplicações web com design
                   responsivo usando tecnologias como React.js, TypeScript, SASS
                   e HTML.
                 </p>
                 <p>
-                  Atualmente tenho buscado expandir meu repertório de
-                  conhecimentos tanto no front-end, aprendendo sobre outros
-                  frameworks como o Next.js e técnicas de clean code, como no
-                  back-end, com o desenvolvimento de APIs usando Node.js e
-                  Nest.js e manipulação de bancos de dados usando ORMs como o
-                  Prisma.
+                  Recentemente tenho me dedicado a expandir meu repertório de
+                  conhecimentos tanto no front-end como no back-end e a
+                  desenvolver projetos usando Next.js, Node.js e PostgreSQL,
+                  incluindo por exemplo o desenvolvimento de um site comercial.
+                  Atualmente busco aprofundar meus conhecimentos sobre bancos de
+                  dados, SQL e boas práticas de desenvolvimento.
                 </p>
                 <Button
                   link="files/Long_CV_Lucas_front.pdf"
